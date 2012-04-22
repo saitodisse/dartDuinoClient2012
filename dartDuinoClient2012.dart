@@ -25,6 +25,8 @@ class dartDuinoClient2012 {
     var question = json["question"];
     
     if (question != null) {
+      document.query('.main').classes.remove("fim");
+      
       document.query('#question').innerHTML = question;
       document.query('#answers').innerHTML = "";
       
@@ -38,7 +40,7 @@ class dartDuinoClient2012 {
       document.query('#answers').innerHTML = answers;      
     } else  {
       // finish questions
-      document.query('.main').innerHTML = "<h1 id=\"theend\">Fim</h1>";
+      document.query('.main').classes.add("fim");
     }
   }
 
