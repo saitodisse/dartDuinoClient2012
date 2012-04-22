@@ -3,6 +3,9 @@
 #source('Config.dart');
 
 class dartDuinoClient2012 {
+  static final String ANSWER_NEUTRAL = "neutral";
+  static final String ANSWER_CORRECT = "correct";
+  static final String ANSWER_INCORRECT = "incorrect";
 
   dartDuinoClient2012() {
     
@@ -33,8 +36,7 @@ class dartDuinoClient2012 {
       var answers = "";
       
       for (var answer in json["answers"]) {
-        var state = answer['state'] ? "correct": "" ;
-        answers += "<li class=\"${state}\">${answer['value']}</li>";
+        answers += "<li class=\"${answer['state']}\">${answer['value']}</li>";
       }
       
       document.query('#answers').innerHTML = answers;      
