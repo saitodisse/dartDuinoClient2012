@@ -5,19 +5,24 @@
 class dartDuinoClient2012 {
 
   dartDuinoClient2012() {
-    initializeFromUrl();
+    loadQuestions();
   }
   
-  static void initializeFromUrl() {
+  void loadQuestions() {
     XMLHttpRequest request = new XMLHttpRequest();
     request.withCredentials = true;
     request.on.load.add((e) { 
-      window.alert("${JSON.parse(request.responseText)}"); 
+      showQuestion(request); 
     });
+    
     request.open('GET', "http://${Config.HTTP_HOST}:${Config.HTTP_PORT}/", true);
-//    request.setRequestHeader("Access-Control-Allow-Credentials", "false");
     request.send();
-    //request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
+  }
+  
+  void showQuestion(XMLHttpRequest request) {
+    JSON json = JSON.parse(request.responseText);
+    
+    
   }
 
   void run() {
@@ -26,7 +31,7 @@ class dartDuinoClient2012 {
 
   void write(String message) {
     // the HTML library defines a global "document" variable
-    document.query('#status').innerHTML = message;
+    document.query('#question').innerHTML = message;
   }
 }
 
