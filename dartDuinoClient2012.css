@@ -3,7 +3,7 @@ body{
 	font-family:Verdana;
 }
 
-.main{
+#main{
 	padding:20px;
 }
 
@@ -24,3 +24,17 @@ body{
 	border-color:#555;
 	border-style:solid;
 }
+
+
+#theend {
+	display: none;
+}
+
+#main.theend #questions {
+	display: none;
+}
+
+#main.theend #theend {
+	display: block;
+}
+
