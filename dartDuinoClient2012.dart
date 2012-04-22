@@ -22,17 +22,24 @@ class dartDuinoClient2012 {
   void showQuestion(XMLHttpRequest request) {
     JSON json = JSON.parse(request.responseText);
     
-    document.query('#question').innerHTML = json["question"];
-    document.query('#answers').innerHTML = "";
+    var question = json["question"];
     
-    var answers = "";
-    
-    for (var answer in json["answers"]) {
-      var state = answer['state'] ? "correct": "" ;
-      answers += "<li class=\"${state}\">${answer['value']}</li>";
+    if (question != null) {
+      document.query('#question').innerHTML = question;
+      document.query('#answers').innerHTML = "";
+      
+      var answers = "";
+      
+      for (var answer in json["answers"]) {
+        var state = answer['state'] ? "correct": "" ;
+        answers += "<li class=\"${state}\">${answer['value']}</li>";
+      }
+      
+      document.query('#answers').innerHTML = answers;      
+    } else  {
+      // finish questions
+      document.query('.main').innerHTML = "<h1 id=\"theend\">Fim</h1>";
     }
-    
-    document.query('#answers').innerHTML = answers;
   }
 
   void run() {

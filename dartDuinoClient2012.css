@@ -1,26 +1,26 @@
 body{
- margin:20px;
- font-family:Verdana;
+	margin:20px;
+	font-family:Verdana;
 }
 
 .main{
- padding:20px;
+	padding:20px;
 }
 
 .question{
- width:90%;height:300px;-webkit-border-radius: 43px;-moz-border-radius: 43px;border-radius: 43px;border:13px solid #6EC0FF;background-color:#DEF1FF;-webkit-box-shadow: #363636 6px 6px 6px;-moz-box-shadow: #363636 6px 6px 6px; box-shadow: #363636 6px 6px 6px;
- padding:30px;
- font-size:1.4em;
+	width:90%;height:300px;-webkit-border-radius: 43px;-moz-border-radius: 43px;border-radius: 43px;border:13px solid #6EC0FF;background-color:#DEF1FF;-webkit-box-shadow: #363636 6px 6px 6px;-moz-box-shadow: #363636 6px 6px 6px; box-shadow: #363636 6px 6px 6px;
+	padding:30px;
+	font-size:1.4em;
 }
 
 .answers ul li{
- -webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px;border:4px solid #64A379;background-color:#BDFFCC;-webkit-box-shadow: #363636 3px 3px 3px;-moz-box-shadow: #363636 3px 3px 3px; box-shadow: #363636 3px 3px 3px;
- font-size:1.4em;
- display:inline;
- float:left;
- width:20%;
- padding:25px;
- margin:25px;
- border-color:#555;
- border-style:solid;
+	-webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px;border:4px solid #64A379;background-color:#BDFFCC;-webkit-box-shadow: #363636 3px 3px 3px;-moz-box-shadow: #363636 3px 3px 3px; box-shadow: #363636 3px 3px 3px;
+	font-size:1.4em;
+	display:inline;
+	float:left;
+	width:20%;
+	padding:25px;
+	margin:25px;
+	border-color:#555;
+	border-style:solid;
 }
