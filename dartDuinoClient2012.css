@@ -14,6 +14,7 @@ body{
 }
 
 .answers ul li{
+ -webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px;border:4px solid #64A379;background-color:#BDFFCC;-webkit-box-shadow: #363636 3px 3px 3px;-moz-box-shadow: #363636 3px 3px 3px; box-shadow: #363636 3px 3px 3px;
  font-size:1.4em;
  display:inline;
  float:left;
