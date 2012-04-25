@@ -24,9 +24,6 @@ The Backend controls the questions and answer, setting the current question, it 
 The Frontend connect to the Backend for make periodic requests with XMLHttpRequest, showing the current question or the end screen when the user answer all the questions.
 At the Arduino, when the user push one of the three buttons, it send the command to the serial port, answering the current question. Then the server send to Arduino if the answer is correct or not and the Arduino show a red or green light and turn on the bell.
 
-#### ROAD MAP ####
-* ....
-
 #### JSON response example ####
 ```html
 {
