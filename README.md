@@ -1,4 +1,4 @@
-rtHackaton
+DartHackaton
 =============
 We create a Quiz application for the DartHackaton realized at Globalcode in São Paulo, Brazil.
 
@@ -34,15 +34,15 @@ At the Arduino, when the user push one of the three buttons, it send the command
     "answers": [
         {
             "value": "Answer 1",
-            "state": 0
+            "state": "N"
         },
         {
             "value": "Answer 2",
-            "state": 0
+            "state": "N"
         },
         {
             "value": "Answer 3",
-            "state": 0
+            "state": "C"
         }
     ],
     "status": true
