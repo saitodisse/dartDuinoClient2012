@@ -4,9 +4,9 @@ We create a Quiz application for the DartHackaton realized at Globalcode in São
 
 Hack in this project:
 
-* Júlio Saito
-* Luis Leão
-* Marcio Camurati
+* Júlio Saito (@saitodisse)
+* Luis Leão (@luisleao)
+* Marcio Camurati (@marciocamurati)
 * Rafael Brito
 
 Demo video: http://youtu.be/M5wDBLSGOlE
